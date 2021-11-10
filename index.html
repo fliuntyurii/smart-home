@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iHome</title>
+
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/block.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/radio-input.css">
+</head>
+<body>
+    <header>
+        <p id="userName">User</p>
+        <h1 id="name"><span>i</span>Home</h1>
+        <p id="time"></p>
+    </header>
+    <main>
+        <div class="airConditioning1">
+            <h2>Conditioner</h2>
+            <div class='switcher'>
+                <label class='switch'>
+                    <input id='checkboxCond' type='checkbox'>
+                    <span class='slider'></span>
+                </label>
+                <p>Conditioner: <span id='ConditionerStatus' class='colorStyle'>Off</span></p>
+            </div>
+            <div id='conditionerMode'>
+            <div class="heating">
+                <input id='radioInputUp' class='radioInput' name='mode' value="heating" type="radio" disabled>
+                <label for="mode1">Heating</label>
+            </div>
+            <div class="cooling">
+                <input id='radioInputDown' class='radioInput' name='mode' value="cooling" type="radio" disabled>
+                <label for="mode2">Cooling</label>
+            </div>
+        </div>
+        </div>
+        <div class="videoSurveillance1">
+            <h2>Camera 01</h2>
+            <video src='img/camera.mp4' autoplay loop muted ></video>
+        </div>
+        <div class="lighting1">
+            <h2>Lighting</h2>
+            <div class='switcher'>
+                <label class='switch'>
+                    <input id='checkbox' type='checkbox' onclick="chboxToRange()">
+                    <span class='slider'></span>
+                </label>
+                <p>On/off</p>
+            </div>
+            <div class="bright">
+                <p>Bright: <span id="lightingValue"> </span></p>
+                <input type='range' value='0' id='slide' min='0' max='100'>
+            </div>
+        </div>
+        <div class="smartTV1">
+            <h2>Smart TV</h2>
+            <p>Samsung <span>43T5300</span></p>
+            <input type="button" id="tvPow" value="Power">
+            <input type="button" id="buttonVolU" value="+">
+            <input type="button" id="buttonVolD" value="-">
+            <div class="buttonCount">
+                <input type="button" id="buttonCountPlus" value=">">
+                <div id="buttonCountNumber">Netflix</div>
+                <input type="button" id="buttonCountMinus" value="<">
+            </div>
+            <select name="channels" id="channelsList">
+                <option selected>Channels: </option>
+                <option disabled value="">Netflix</option>
+                <option disabled value="">Discovery</option>
+                <option disabled value="">Disney</option>
+                <option disabled value="">Cartoon</option>
+                <option disabled value="">HBO</option>
+                <option disabled value="">Paramount</option>
+                <option disabled value="">Showtime</option>
+                <option disabled value="">Fox</option>
+                <option disabled value="">ET News</option>
+                <option disabled value="">ON Film</option>
+            </select>
+        </div>
+        <div class='alarm1'>
+            <h2>Safety</h2>
+            <button class='power'>Power</button>
+            <p>Alarm system: <span id='alarmStatus'>Off</span></p>
+            <p id='info'>Turn on if you aren't at home.</p>
+        </div>
+        <div class='cleaning1'>
+            <h2>Cleaning</h2>
+            <button id="start">Start</button>
+            <p>Vacuum cleaner "<span class='colorStyle'>i</span>Robox"</p>
+            <p>works for <span id="min">00</span>:<span id="sec">00</span></span> min.</p>
+        </div>
+    </main>
+    <footer>
+        <button class="button" id="airConditioning">Conditioner</button>
+        <button class="button" id="videoSurveillance">Video Surveillance</button>
+        <button class="button" id="lighting">Light</button>
+        <button class="button" id="smartTV">Smart TV</button>
+        <button class="button" id="alarm">Safety</button>
+        <button class="button"s id="cleaning">Cleaning</button>
+    </footer>
+    
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="popup-title">Welcome to <span>i</span>Home</div>
+            <div class="popup-text">This application was designed to help users remotely control the home.</div>
+            <div id="login">
+                <input type="text" class="login" placeholder="Enter name" value="">
+            </div>
+            <div class="popup-button">
+                <a href="#" class="popup-confirm">Log In</a>
+                <a href="https://www.google.com.ua/" class="popup-cancel">Log Out</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/stopwatch.js"></script>
+    <script src="js/notification.js"></script>
+</body>
+</html>

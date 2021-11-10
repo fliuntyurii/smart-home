@@ -1,0 +1,16 @@
+main {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+}
+
+.airConditioning, .videoSurveillance, .lighting, .smartTV, .alarm, .cleaning, .airConditioning {
+    border: 1px solid rgb(219, 38, 85);
+    border-radius: 15%;
+    margin: 15px;
+    background: rgb(0, 0, 0, 0.65); 
+    height: 290px;
+}
+
+.videoSurveillance1, .lighting1, .alarm1, .cleaning1, .airConditioning1, .smartTV1{
+    display: none;
+}

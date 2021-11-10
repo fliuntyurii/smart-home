@@ -1,0 +1,54 @@
+.radioInput {
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none; */
+    appearance: none;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    transition: all 0.15s ease-out 0s;
+    background: white;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+  }
+  .radioInput:hover {
+    background: white;
+  }
+  .radioInput:checked {
+    background: rgb(219, 38, 85);
+  }
+  .radioInput:checked::before {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    content: '✔';
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .radioInput:checked::after {
+    -webkit-animation: click-wave 0.65s;
+    -moz-animation: click-wave 0.65s;
+    animation: click-wave 0.65s;
+    background: rgb(219, 38, 85);
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 100;
+  }
+
+.heating input, .cooling input {
+  margin-top: 20px;
+}
+
+input[type="radio"]:disabled { 
+  background: #ccc; 
+}

@@ -1,0 +1,189 @@
+input[type=range] {
+    width: 200px;
+    height: 10px;
+    color: rgb(219, 38, 85);
+    appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 10%; 
+    background: rgb(219, 38, 85);
+    cursor: pointer;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 28px;
+    margin-top: 15px;
+}
+
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(204, 202, 202);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: rgb(219, 38, 85);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(219, 38, 85);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.lighting p {
+    color: white;
+    font: 300 20px 'Assistant', sans-serif;
+}
+
+.switcher {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.switcher p {
+    margin-left: 10px;
+}
+
+h2 {
+    color: whitesmoke;
+    font: 800 25px 'Josefin Sans', sans-serif;
+}
+
+#lightingValue {
+    color: white;
+}
+
+video {
+    border-radius: 20%;
+    width: 325px;
+    height: 200px;
+}
+
+.alarm p, #info, .cleaning p, .airConditioning p, .smartTV p{
+    color: white;
+    font: 300 20px 'Assistant', sans-serif;
+}
+
+.smartTV span {
+    font: 200 18px 'Assistant', sans-serif;
+    color: rgba(219, 38, 85, 0.4);
+}
+
+#alarmStatus {
+    font: 300 20px 'Assistant', sans-serif;
+    color: rgb(219, 38, 85);
+}
+
+.colorStyle {
+    color: rgb(219, 38, 85);
+}
+
+#conditionerMode label {
+    color: white;
+    font: 300 20px 'Assistant', sans-serif;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.heating, .cooling {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.buttonCount {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    color: white;
+}
+
+#buttonCountNumber {
+    width: 100px;
+    color: rgb(219, 38, 85);
+    font: 800 15px 'Mochiy Pop P One', sans-serif;
+    background: white;
+    border: 2px solid rgb(219, 38, 85);
+    padding-top: 3px;
+}
+
+#buttonCountPlus, #buttonCountMinus, #buttonVolU, #buttonVolD {
+    color: rgb(219, 38, 85);
+    border: 2px solid rgb(219, 38, 85);
+    height: 35px;
+    width: 35px;
+}
+
+#buttonCountPlus, #buttonCountMinus, #buttonCountNumber {
+    margin: 15px 0;
+}
+
+#tvPow {
+    color: rgb(219, 38, 85);
+    border: 2px solid rgb(219, 38, 85);
+    height: 35px;
+    width: 95px;
+}
+
+.notification {
+    position: fixed;
+    z-index: 1000;
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 700;
+    background: white;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    top: 15px;
+    right: 15px;
+    background: rgb(0, 0, 0, 0.7); 
+    border: 3px solid rgb(219, 38, 85);
+    border-bottom-left-radius: 15px;
+    color: rgb(219, 38, 85);
+}
+
+#channelsList {
+    text-align: center;
+    align-content: center;
+    border: 2px solid rgb(219, 38, 85);
+    height: 35px;
+    width: 105px;
+    color: rgb(219, 38, 85);
+}

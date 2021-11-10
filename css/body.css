@@ -1,0 +1,62 @@
+body {
+    background-image: url("https://res2.weblium.site/res/5c12547db3c9c500253570d2/5c1c8cb5aa6ede002281c7b6_optimized_1920"); 
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+header, main, footer {
+    background: rgb(0, 0, 0, 0.65); 
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    margin-top: 50px;
+    background: rgb(0, 0, 0, 0.85); 
+    justify-content: space-between;
+}
+
+main {
+    min-height: 650px;
+}
+
+footer {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    background: rgb(0, 0, 0, 0.85); 
+}
+
+h1 {
+    font-family: Arvo, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+}
+
+#time {
+    color: white;
+    font-size: 22px;
+    padding-top: 15px;
+    padding-right: 40px;
+    font-family: Montserrat, cursive;
+
+}
+
+#userName {
+    color: white;
+    font-size: 22px;
+    padding-top: 15px;
+    padding-left: 40px;
+    font-family: Montserrat, cursive;
+}
+
+#name span {
+    color: rgb(219, 38, 85);
+    font-family: Arvo, cursive;
+}
