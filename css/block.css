@@ -1,9 +1,12 @@
+.errorInfo {
+    display: none;
+}
 main {
     display: grid;
     grid-template-columns: 400px 400px 400px;
 }
 
-.airConditioning, .videoSurveillance, .lighting, .smartTV, .alarm, .cleaning, .airConditioning {
+.airConditioning, .videoSurveillance, .lighting, .smartTV, .alarm, .cleaning {
     border: 1px solid rgb(219, 38, 85);
     border-radius: 15%;
     margin: 15px;
@@ -13,4 +16,127 @@ main {
 
 .videoSurveillance1, .lighting1, .alarm1, .cleaning1, .airConditioning1, .smartTV1{
     display: none;
+}
+
+@media screen and (max-width: 1800px) {
+    main {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    footer {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 50% 50%;
+    }
+
+    footer .button {
+        margin-left: 15%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    #slide {
+        width: 80%;
+    }
+    .power, #start {
+        width: 80%;
+    }
+
+    #buttonCountNumber {
+        margin-bottom: 0 !important;
+        height: 29px;
+    }
+
+    #tvPow {
+        width: 60px !important;
+        font-size: 16px;
+    }
+
+    #channelsList {
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 33% 33%;
+        width: 100%;
+    }
+    footer , header {
+        width: 100%;
+    }
+
+    footer {
+        padding-top: 50px;
+    }
+    body {
+        background-repeat: round;
+    }
+
+    .videoSurveillance, .lighting, .alarm, .cleaning, .airConditioning, .smartTV{
+        height: 95%;
+    }
+    #conditionerMode {
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+    }
+    #conditionerMode div label {
+        margin-left: 0;
+    }
+    #channelsList {
+        display: none;
+    }
+    h2 {
+        margin-top: 10px;
+    }
+    .bright p {
+        margin-bottom: 0;
+    }
+    #info {
+        margin-top: 0;
+    }
+    .alarm p {
+        margin-bottom: 2px;
+    }
+    .cleaning p {
+        margin-bottom: 2px;
+    }
+    .cleaning p:last-child {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 621px) {
+    /* body {
+        
+    } */
+
+    .videoSurveillance, .lighting, .alarm, .cleaning, .airConditioning, .smartTV, footer {
+        display: none;
+    }
+    body {
+        background-repeat: no-repeat;
+    }
+    
+    #userName {
+        display: none;
+    }
+    .errorInfo {
+        color: white;
+        display: flex;
+        margin: auto;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+    }
 }

@@ -1,7 +1,11 @@
 body {
     background-image: url("https://res2.weblium.site/res/5c12547db3c9c500253570d2/5c1c8cb5aa6ede002281c7b6_optimized_1920"); 
 }
-
+@media screen and (max-width: 600px) {
+    body {
+        background-color: black !important;
+    }
+}
 ::-webkit-scrollbar {
     width: 0;
   }
